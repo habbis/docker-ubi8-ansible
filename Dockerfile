@@ -32,10 +32,8 @@ RUN yum makecache --timer \
       glibc-common \
       python3 \
       python3-pip \
- && yum clean all
- #&& python3 -m pip install -U pip \
-
-RUN python3 -m pip install -U pip
+ && yum clean all \
+ && python3 -m pip install -U pip
 
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
