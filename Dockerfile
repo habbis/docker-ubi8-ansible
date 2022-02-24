@@ -3,6 +3,9 @@ LABEL maintainer="Eirik Habbestad"
 ENV container=docker
 
 ENV pip_packages "ansible"
+# settung env for pip3
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
 
 # Silence annoying subscription messages.
 RUN echo "enabled=0" >> /etc/yum/pluginconf.d/subscription-manager.conf
@@ -26,8 +29,13 @@ RUN yum makecache --timer \
       sudo \
       which \
       hostname \
+      glibc-common \
       python3 \
+      python3-pip \
  && yum clean all
+ #&& python3 -m pip install -U pip \
+
+RUN python3 -m pip install -U pip
 
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
