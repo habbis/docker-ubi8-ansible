@@ -52,5 +52,5 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64
           push: true
-          tags: habbis0/docker-uib8-ansible:latest
+          tags: habbis0/docker-ubi8-ansible:latest
 
