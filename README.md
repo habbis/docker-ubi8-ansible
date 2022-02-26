@@ -1,6 +1,6 @@
 # Universal Base Image 8 Ansible Test Image
 
-[![CI](https://github.com/habbis/docker-ubi8-ansible/workflows/Build/badge.svg?branch=main&event=push)](https://github.com/habbis/docker-ubi8-ansible) [![Docker pulls](https://img.shields.io/docker/pulls/habbis0/docker-ubi8-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/habbis0/docker-ubi8-ansible/)
+[![CI](https://github.com/habbis/docker-ubi8-ansible/workflows/Build/badge.svg?branch=main&event=push)](https://github.com/habbis/docker-ubi8-ansible) [![Docker pulls](https://img.shields.io/docker/pulls/habbis0/docker-ubi8-ansible)](https://hub.docker.com/r/habbis0/docker-ubi8-ansible/)
 
 Universal Base Image 8 Docker container for Ansible playbook and role testing.
 
