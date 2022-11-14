@@ -47,4 +47,5 @@ RUN echo -e '[local]\nlocalhost ansible_connection=local' > /etc/ansible/hosts
 
 #VOLUME ["/sys/fs/cgroup"]
 #CMD ["/usr/lib/systemd/systemd"]
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["tail", "-f", "/dev/null"]
