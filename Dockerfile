@@ -45,5 +45,4 @@ RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 RUN mkdir -p /etc/ansible
 RUN echo -e '[local]\nlocalhost ansible_connection=local' > /etc/ansible/hosts
 
-#CMD ["tail", "-f", "/dev/null"]
-ENTRYPOINT ["/bin/bash"]
+CMD ["tail", "-f", "/dev/null"]
