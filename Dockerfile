@@ -38,6 +38,9 @@ RUN yum makecache --timer \
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
 
+COPY initctl_faker .
+RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
+
 # Disable requiretty.
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
